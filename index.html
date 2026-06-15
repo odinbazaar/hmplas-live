@@ -1,638 +1,452 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HMPLAS B2B Marketing & Sales Swarm</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/components.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar">
+        <div>
+          <div class="brand">
+            <div class="brand-icon">H</div>
+            <div class="brand-info">
+              <h2>HMPLAS OS</h2>
+              <span>B2B Satış & Pazarlama</span>
+            </div>
+          </div>
+          
+          <nav class="nav-menu">
+            <div class="nav-item active" data-tab="tab-assistants" id="nav-assistants">
+              <span class="nav-icon">🤖</span>
+              <span>AI Satış Asistanları</span>
+            </div>
+            
+            <div class="nav-item" data-tab="tab-marketing" id="nav-marketing">
+              <span class="nav-icon">📢</span>
+              <span>Sosyal Medya & ROI</span>
+            </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HMPLAST | Profesyonel Plastik ve Medikal Çözümleri</title>
-    <meta name="description"
-        content="HMPLAST - Plastik enjeksiyon, vakum şişirme ve medikal yedek parça üretiminde 10+ yıllık tecrübe.">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-
-<body>
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">HM<span>PLAST</span></a>
-                <ul class="nav-links">
-                    <li><a href="#home" class="active" data-key="nav.home">Anasayfa</a></li>
-                    <li><a href="#about" data-key="nav.about">Hakkımızda</a></li>
-                    <li><a href="#sectors" data-key="nav.sectors">Sektörler</a></li>
-                    <li><a href="#products" data-key="nav.products">Ürünler</a></li>
-                    <li><a href="#contact" data-key="nav.contact">İletişim</a></li>
-                </ul>
-                <div class="nav-actions">
-                    <button id="lang-toggle" class="btn-lang">EN</button>
-                    <div class="mobile-menu-btn">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>
-            </nav>
+            <div class="nav-item" data-tab="tab-agentos" id="nav-agentos">
+              <span class="nav-icon">⚙️</span>
+              <span>Hermes Agent OS</span>
+            </div>
+          </nav>
         </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text reveal">
-                        <h1 data-key="hero.title">Plastikte <span>Mükemmellik</span> ve İnovasyon</h1>
-                        <p data-key="hero.subtitle">HMPLAST olarak, medikalden otomotive tüm sektörler için yüksek hassasiyetli plastik çözümleri üretiyoruz.</p>
-                        <div class="hero-btns">
-                            <a href="#products" class="btn btn-primary" data-key="hero.cta">
-                                Ürünlerimizi Keşfedin <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="hero-image reveal">
-                        <img src="/images/hero 1.jpeg" alt="HMPLAST Üretim">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Stats Section -->
-        <section class="stats">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item reveal">
-                        <h3>10+</h3>
-                        <p data-key="stats.years">Yıllık Deneyim</p>
-                    </div>
-                    <div class="stat-item reveal">
-                        <h3>500+</h3>
-                        <p data-key="stats.projects">Başarılı Proje</p>
-                    </div>
-                    <div class="stat-item reveal">
-                        <h3>24/7</h3>
-                        <p data-key="stats.machines">Üretim Hattı</p>
-                    </div>
-                    <div class="stat-item reveal">
-                        <h3>100%</h3>
-                        <p data-key="stats.clients">Müşteri Memnuniyeti</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-image reveal">
-                        <div style="position: relative;">
-                            <img src="/images/hero2.jpeg" alt="Fabrika" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
-                        </div>
-                    </div>
-                    <div class="about-content reveal">
-                        <span class="subtitle" data-key="about.subtitle">Hakkımızda</span>
-                        <h2 data-key="about.title">Geleceği Şekillendiriyoruz</h2>
-                        <p data-key="about.content1"></p>
-                        <p data-key="about.content2"></p>
-                        <div class="features-grid">
-                            <div class="feature-card">
-                                <i class="fas fa-check-double"></i>
-                                <h4 data-key="about.f1">Yüksek Kalite</h4>
-                                <p data-key="about.f1d" style="font-size: 0.9rem;"></p>
-                            </div>
-                            <div class="feature-card">
-                                <i class="fas fa-microchip"></i>
-                                <h4 data-key="about.f2">İleri Teknoloji</h4>
-                                <p data-key="about.f2d" style="font-size: 0.9rem;"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sectors Section -->
-        <section id="sectors" class="light-bg">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="subtitle" data-key="sectors.subtitle">Uzmanlık Alanlarımız</span>
-                    <h2 data-key="sectors.title">Hizmet Verdiğimiz Sektörler</h2>
-                </div>
-                <div class="product-grid">
-                    <div class="feature-card reveal" style="text-align: center;">
-                        <i class="fas fa-briefcase-medical" style="font-size: 3rem;"></i>
-                        <h3 data-key="sectors.medikal" style="margin-top: 1rem;">Medikal</h3>
-                    </div>
-                    <div class="feature-card reveal" style="text-align: center;">
-                        <i class="fas fa-car" style="font-size: 3rem;"></i>
-                        <h3 data-key="sectors.automotive" style="margin-top: 1rem;">Otomotiv</h3>
-                    </div>
-                    <div class="feature-card reveal" style="text-align: center;">
-                        <i class="fas fa-graduation-cap" style="font-size: 3rem;"></i>
-                        <h3 data-key="sectors.education" style="margin-top: 1rem;">Eğitim</h3>
-                    </div>
-                    <div class="feature-card reveal" style="text-align: center;">
-                        <i class="fas fa-dumbbell" style="font-size: 3rem;"></i>
-                        <h3 data-key="sectors.sports" style="margin-top: 1rem;">Spor</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Products Section -->
-        <section id="products" class="products-section">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="subtitle" data-key="products.subtitle">Ürünler ve Hizmetler</span>
-                    <h2 data-key="products.title">Üretim Kabiliyetlerimiz</h2>
-                </div>
-
-                <div class="filter-wrap reveal">
-                    <button class="filter-btn active" data-filter="all" data-key="products.all">Tümü</button>
-                    <button class="filter-btn" data-filter="mechanism" data-key="products.mechanism">Mekanizma</button>
-                    <button class="filter-btn" data-filter="spare" data-key="products.spare">Yedek Parça</button>
-                    <button class="filter-btn" data-filter="machine" data-key="products.machine">Makina Parkı</button>
-                </div>
-
-                <div class="product-grid" id="product-container">
-                    <!-- Products will be injected by JavaScript -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Video Gallery Section -->
-        <section id="video-gallery" class="light-bg">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="subtitle">Üretim Süreçlerimiz</span>
-                    <h2>Tanıtım Videoları</h2>
-                </div>
-                <div class="product-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
-                    <div class="feature-card reveal" style="padding: 0; overflow: hidden;">
-                        <video controls style="width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover;">
-                            <source src="/images/video1.mp4" type="video/mp4">
-                        </video>
-                        <div style="padding: 1.5rem;">
-                            <h4>Modern Üretim Hattı</h4>
-                            <p style="font-size: 0.9rem;">Plastik enjeksiyon ve vakum şişirme süreçlerimize yakından bakın.</p>
-                        </div>
-                    </div>
-                    <div class="feature-card reveal" style="padding: 0; overflow: hidden;">
-                        <video controls style="width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover;">
-                            <source src="/images/video2.mp4" type="video/mp4">
-                        </video>
-                        <div style="padding: 1.5rem;">
-                            <h4>HMPLAST Tanıtım</h4>
-                            <p style="font-size: 0.9rem;">Yapay zeka destekli üretim teknolojilerimiz ve inovasyon vizyonumuz.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="container">
-                <div class="contact-wrapper">
-                    <div class="contact-box reveal">
-                        <span class="subtitle" data-key="contact.subtitle">İletişim</span>
-                        <h3 data-key="contact.title">Bizimle İletişime Geçin</h3>
-                        
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4 data-key="contact.address">Adres</h4>
-                                <p>MİMARSİNAN MAH. ÇORUM SANAYİ SİT. 21. CAD. NO:61 MERKEZ/ÇORUM</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <h4 data-key="contact.phone">Telefon</h4>
-                                <p><a href="tel:05424081090">0542 408 10 90</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4 data-key="contact.email">E-posta</h4>
-                                <p><a href="mailto:info@hmplast.com.tr">info@hmplast.com.tr</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <form id="contact-form" class="contact-form reveal" action="mailto:info@hmplast.com.tr" method="post" enctype="text/plain">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" name="Ad Soyad" data-key="contact.name_p" placeholder="Adınız Soyadınız" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="E-posta" data-key="contact.email_p" placeholder="E-posta Adresiniz" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="Konu" data-key="contact.subj_p" placeholder="Konu">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="Mesaj" rows="5" data-key="contact.msg_p" placeholder="Mesajınız" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" data-key="contact.send" style="width: 100%; justify-content: center;">
-                            Mesajı Gönder
-                        </button>
-                    </form>
-                </div>
-                <!-- Google Maps -->
-                <div class="map-container reveal" style="margin-top: 3rem;">
-                    <iframe 
-                        src="https://maps.google.com/maps?q=Mimarsinan+Mah.+%C3%87orum+Sanayi+Sitesi+21.+Cad.+No:61+Merkez+%C3%87orum&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                        width="100%" 
-                        height="400" 
-                        style="border:0; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-main">
-                <div class="footer-about">
-                    <a href="#" class="logo" style="color: white; font-size: 2rem;">HM<span>PLAST</span></a>
-                    <p>On yılı aşkın sektörel deneyimimizle, plastik ve medikal çözümlerinde güvenilir ortağınızız.</p>
-                </div>
-                <div class="footer-col">
-                    <h4 data-key="nav.home">Anasayfa</h4>
-                    <ul class="footer-links">
-                        <li><a href="#about" data-key="nav.about">Hakkımızda</a></li>
-                        <li><a href="#products" data-key="nav.products">Ürünler</a></li>
-                        <li><a href="#contact" data-key="nav.contact">İletişim</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 data-key="nav.sectors">Sektörler</h4>
-                    <ul class="footer-links">
-                        <li><a href="#sectors">Medikal</a></li>
-                        <li><a href="#sectors">Otomotiv</a></li>
-                        <li><a href="#sectors">Eğitim</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Sosyal Medya</h4>
-                    <div style="display: flex; gap: 1rem;">
-                        <a href="#"><i class="fab fa-instagram" style="font-size: 1.5rem;"></i></a>
-                        <a href="#"><i class="fab fa-linkedin" style="font-size: 1.5rem;"></i></a>
-                        <a href="#"><i class="fab fa-facebook" style="font-size: 1.5rem;"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 HMPLAST KALIP SAN VE TIC LTD ŞTİ. Tüm Hakları Saklıdır.</p>
-                <div style="display: flex; gap: 2rem;">
-                    <a href="#">KVKK</a>
-                    <a href="#">Gizlilik Politikası</a>
-                </div>
-            </div>
+        
+        <div class="sidebar-footer">
+          <div class="footer-meta">
+            <p>Sistem: <strong>Otonom Pazarlama Aktif</strong></p>
+            <p>Sürüm: <strong>v3.0.0 (Rolex Edition)</strong></p>
+            <p>Zaman: <strong id="current-time">Yükleniyor...</strong></p>
+          </div>
         </div>
-    </footer>
+      </aside>
 
-    <script type="module" src="main.js"></script>
+      <!-- Main Content Pane -->
+      <main class="main-content">
+        
+        <!-- ==================== TAB 1: AI SALES ASSISTANTS ==================== -->
+        <section class="tab-pane active" id="tab-assistants">
+          <header class="page-header">
+            <h1>HMPLAS Otonom Satış Ajanları Kontrol Paneli</h1>
+            <p>AI Ajanlarımız ile Müşteri İletişimini ve Toptan Sipariş Taleplerini Otomatize Edin</p>
+          </header>
 
-    <!-- HM Plast Yazılı Asistan - Ayşe -->
-    <style>
-        /* FAB Butonu */
-        .ai-fab {
-            position: fixed; bottom: 30px; right: 30px; z-index: 9999;
-            width: 70px; height: 70px; border-radius: 50%;
-            border: 2px solid var(--primary, #10b981);
-            cursor: pointer; background: #fff;
-            box-shadow: 0 4px 24px rgba(16, 185, 129, 0.35);
-            display: flex; align-items: center; justify-content: center;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            padding: 0; overflow: hidden;
-        }
-        .ai-fab:hover { transform: translateY(-5px) scale(1.05); box-shadow: 0 8px 32px rgba(16,185,129,0.45); }
-        .ai-fab img { width: 48px; height: 48px; object-fit: contain; filter: hue-rotate(-55deg) saturate(2) brightness(0.9); }
-        .ai-fab .ai-fab-glow {
-            position: absolute; width: 100%; height: 100%; border-radius: 50%;
-            border: 2px solid rgba(16, 185, 129, 0.3); animation: ai-pulse 3s infinite ease-out;
-        }
-        .ai-fab .ai-fab-glow:nth-child(2) { animation-delay: 1.5s; }
-        @keyframes ai-pulse { 0% { transform: scale(0.9); opacity: 0.7; } 100% { transform: scale(1.8); opacity: 0; } }
-        .ai-fab.hidden { transform: scale(0); pointer-events: none; }
-
-        /* Chat Paneli */
-        .ai-chat-panel {
-            position: fixed; bottom: 30px; right: 30px; z-index: 10000;
-            width: 380px; max-height: 580px; background: #fff; border-radius: 20px;
-            box-shadow: 0 12px 48px rgba(0,0,0,0.18);
-            display: flex; flex-direction: column; overflow: hidden;
-            transform: scale(0) translateY(20px); transform-origin: bottom right;
-            opacity: 0; transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.25s ease;
-            pointer-events: none;
-        }
-        .ai-chat-panel.open { transform: scale(1) translateY(0); opacity: 1; pointer-events: all; }
-
-        /* Header */
-        .ai-chat-header {
-            background: linear-gradient(135deg, var(--primary, #10b981), #059669);
-            color: white; padding: 16px 18px; display: flex; align-items: center; gap: 12px; flex-shrink: 0;
-        }
-        .ai-chat-header-avatar {
-            width: 42px; height: 42px; border-radius: 50%; background: #fff;
-            display: flex; align-items: center; justify-content: center; overflow: hidden;
-            flex-shrink: 0; border: 2px solid rgba(255,255,255,0.4);
-        }
-        .ai-chat-header-avatar img { width: 34px; height: 34px; object-fit: contain; filter: hue-rotate(-55deg) saturate(2) brightness(0.9); }
-        .ai-chat-header-info { flex: 1; }
-        .ai-chat-header-info h4 { margin: 0; font-size: 15px; font-weight: 600; }
-        .ai-chat-header-info span { font-size: 12px; opacity: 0.85; }
-        .ai-chat-header-actions { display: flex; gap: 6px; align-items: center; }
-        .ai-chat-header-actions button {
-            background: rgba(255,255,255,0.2); border: none; color: white;
-            width: 32px; height: 32px; border-radius: 50%; cursor: pointer;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 14px; transition: background 0.2s;
-        }
-        .ai-chat-header-actions button:hover { background: rgba(255,255,255,0.35); }
-
-        /* Mesaj Alanı */
-        .ai-chat-messages {
-            flex: 1; overflow-y: auto; padding: 16px;
-            display: flex; flex-direction: column; gap: 10px;
-            min-height: 220px; max-height: 380px; background: #f8fafb;
-        }
-        .ai-chat-messages::-webkit-scrollbar { width: 4px; }
-        .ai-chat-messages::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px; }
-        .ai-msg {
-            max-width: 88%; padding: 10px 14px; border-radius: 16px;
-            font-size: 13.5px; line-height: 1.55; word-wrap: break-word;
-            animation: ai-msg-in 0.3s ease;
-        }
-        @keyframes ai-msg-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-        .ai-msg.assistant { align-self: flex-start; background: #fff; color: #1e293b; border: 1px solid #e5e7eb; border-bottom-left-radius: 4px; }
-        .ai-msg.user { align-self: flex-end; background: var(--primary, #10b981); color: white; border-bottom-right-radius: 4px; }
-        .ai-msg.system { align-self: center; background: transparent; color: #94a3b8; font-size: 12px; text-align: center; padding: 4px 8px; }
-
-        /* Yazıyor göstergesi */
-        .ai-typing { display: flex; gap: 4px; align-items: center; padding: 4px 2px; }
-        .ai-typing span {
-            width: 7px; height: 7px; border-radius: 50%; background: #94a3b8;
-            animation: ai-bounce 1.2s infinite;
-        }
-        .ai-typing span:nth-child(2) { animation-delay: 0.2s; }
-        .ai-typing span:nth-child(3) { animation-delay: 0.4s; }
-        @keyframes ai-bounce { 0%, 80%, 100% { transform: scale(0.7); opacity: 0.5; } 40% { transform: scale(1); opacity: 1; } }
-
-        /* Randevu butonu */
-        .ai-appt-btn {
-            display: inline-block; margin-top: 10px; padding: 10px 20px;
-            background: var(--primary, #10b981); color: white !important;
-            border-radius: 24px; text-decoration: none; font-size: 13px;
-            font-weight: 600; transition: background 0.2s;
-        }
-        .ai-appt-btn:hover { background: #059669; }
-
-        /* Alt Bar */
-        .ai-chat-footer {
-            padding: 12px 14px; border-top: 1px solid #e5e7eb;
-            display: flex; align-items: center; gap: 8px; background: #fff; flex-shrink: 0;
-        }
-        .ai-chat-input {
-            flex: 1; border: 1px solid #e2e8f0; border-radius: 24px;
-            padding: 10px 16px; font-size: 13.5px; outline: none;
-            background: #f8fafb; transition: border-color 0.2s; font-family: inherit;
-        }
-        .ai-chat-input:focus { border-color: var(--primary, #10b981); }
-        .ai-chat-input::placeholder { color: #94a3b8; }
-        .ai-chat-send {
-            width: 40px; height: 40px; border-radius: 50%; border: none; cursor: pointer;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 16px; transition: all 0.2s; flex-shrink: 0;
-            background: var(--primary, #10b981); color: white;
-        }
-        .ai-chat-send:hover { background: #059669; }
-        .ai-chat-send:disabled { opacity: 0.5; cursor: not-allowed; }
-
-        /* Mobil */
-        @media (max-width: 480px) {
-            .ai-chat-panel { width: calc(100vw - 20px); max-height: calc(100vh - 80px); bottom: 10px; right: 10px; border-radius: 16px; }
-            .ai-fab { bottom: 20px; right: 20px; width: 60px; height: 60px; }
-            .ai-fab img { width: 40px; height: 40px; }
-        }
-    </style>
-
-    <!-- FAB Butonu -->
-    <button class="ai-fab" id="ai-fab" title="AI Asistan Ayşe">
-        <div class="ai-fab-glow"></div>
-        <div class="ai-fab-glow"></div>
-        <img src="/images/assistant-logo.png" alt="AI Asistan">
-    </button>
-
-    <!-- Chat Paneli -->
-    <div class="ai-chat-panel" id="ai-chat-panel">
-        <div class="ai-chat-header">
-            <div class="ai-chat-header-avatar">
-                <img src="/images/assistant-logo.png" alt="Ayşe">
+          <div class="dashboard-grid">
+            <!-- Assistants List Card -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <span class="card-icon">👥</span>
+                  <h3>Aktif Satış Asistanları</h3>
+                </div>
+                <div class="card-subtitle">Farklı kanallarda müşteri karşılayan AI ordusu</div>
+              </div>
+              <div class="assistants-grid" id="assistants-grid-container">
+                <!-- Rendered dynamically in aiAssistants.js -->
+              </div>
             </div>
-            <div class="ai-chat-header-info">
-                <h4>Ayşe</h4>
-                <span id="ai-header-status">HMPLAST AI Assistant</span>
+
+            <!-- Live Chat Simulation Card -->
+            <div class="card">
+              <div class="card-header" style="flex-direction: row; justify-content: space-between; align-items: center;">
+                <div>
+                  <div class="card-title">
+                    <span class="card-icon">💬</span>
+                    <h3>Canlı Satış Sohbeti Simülasyonu</h3>
+                  </div>
+                  <div class="card-subtitle">WhatsApp / Web üzerinden müşteri-asistan görüşmesi</div>
+                </div>
+                <div class="lang-select-wrapper">
+                  <select id="assistant-lang-select" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;">
+                    <option value="en">EN (English)</option>
+                    <option value="de">DE (Deutsch)</option>
+                    <option value="fr">FR (Français)</option>
+                    <option value="es">ES (Español)</option>
+                    <option value="it">IT (Italiano)</option>
+                    <option value="ar">AR (العربية)</option>
+                    <option value="ru">RU (Русский)</option>
+                    <option value="tr">TR (Türkçe)</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="chat-sim-container">
+                <div class="chat-box" id="assistant-chat-box">
+                  <div class="chat-bubble assistant">
+                    <div class="bubble-sender">HMPLAS AI</div>
+                    <div class="bubble-text">Merhaba! Satış simülasyonunu başlatmak için dili seçip aşağıdaki butona tıklayın.</div>
+                  </div>
+                </div>
+                <button class="btn-trigger" id="btn-start-chat-sim" style="width: 100%; margin-top: 1rem;">
+                  <span>Simülasyonu Başlat</span>
+                </button>
+              </div>
             </div>
-            <div class="ai-chat-header-actions">
-                <button id="ai-close-btn" title="Close"><i class="fas fa-times"></i></button>
+          </div>
+
+          <!-- Lead Pipeline Kanban -->
+          <div class="card" style="margin-top: 1.5rem;">
+            <div class="card-header" style="flex-direction: row; justify-content: space-between; align-items: center;">
+              <div>
+                <div class="card-title">
+                  <span class="card-icon">📋</span>
+                  <h3>Otonom Müşteri Adayı Hunisi (Lead Pipeline)</h3>
+                </div>
+                <div class="card-subtitle">AI asistanlar tarafından otonom kazanılan B2B leadleri</div>
+              </div>
+              <!-- Manual Lead Form inside header -->
+              <div class="manual-lead-form">
+                <button class="btn-toggle" id="btn-toggle-auto-pipeline" style="margin-right: 0.5rem;">Pipeline Otomasyonu: Kapalı</button>
+                <input type="text" id="manual-lead-name" placeholder="Müşteri / Kurum Adı" />
+                <input type="text" id="manual-lead-volume" placeholder="Talep (Örn: 20 Karyola)" />
+                <button class="btn-action" id="btn-add-manual-lead">Lead Ekle</button>
+              </div>
             </div>
+
+            <div class="pipeline-board">
+              <div class="pipeline-col">
+                <div class="pipeline-col-header">Yeni Adaylar</div>
+                <div class="pipeline-col-cards" id="pipeline-new"></div>
+              </div>
+              <div class="pipeline-col">
+                <div class="pipeline-col-header">Görüşmede</div>
+                <div class="pipeline-col-cards" id="pipeline-contacted"></div>
+              </div>
+              <div class="pipeline-col">
+                <div class="pipeline-col-header">Teklif Gönderildi</div>
+                <div class="pipeline-col-cards" id="pipeline-proposal"></div>
+              </div>
+              <div class="pipeline-col">
+                <div class="pipeline-col-header">Kazanıldı</div>
+                <div class="pipeline-col-cards" id="pipeline-won"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================== TAB 2: DIGITAL MARKETING & ROI ==================== -->
+        <section class="tab-pane" id="tab-marketing">
+          <header class="page-header">
+            <h1>Otonom B2B Dijital Pazarlama Hub</h1>
+            <p>n8n Pipeline, Blackboard Swarm Orkestrasyonu ve Çok Dilli Sosyal Medya Kampanyaları</p>
+          </header>
+
+          <div class="dashboard-grid">
+            <!-- n8n Workflow Visualizer -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <span class="card-icon">🔗</span>
+                  <h3>n8n Teklif & Lead Üretim Akışı</h3>
+                </div>
+                <div class="card-subtitle">Düğüm (node) verilerini incelemek için üzerine tıklayın</div>
+              </div>
+              <div class="n8n-container">
+                <div class="n8n-canvas" id="n8n-nodes-container">
+                  <!-- Rendered dynamically in salesSystem.js -->
+                </div>
+                <div class="node-inspector-panel">
+                  <div class="inspector-title" id="inspector-node-title">Node Seçilmedi</div>
+                  <pre class="json-block" id="inspector-node-json">{ "info": "İncelemek için bir düğüme tıklayın." }</pre>
+                </div>
+              </div>
+            </div>
+
+            <!-- Blackboard Swarm Simulator -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <span class="card-icon">🎯</span>
+                  <h3>Hermes Blackboard Satış Swarm</h3>
+                </div>
+                <div class="card-subtitle">Fiyat, Stok, Teklif ve Randevu Orkestrasyonu</div>
+              </div>
+              <div class="blackboard-container">
+                <div class="blackboard-canvas" id="blackboard-cols-container">
+                  <!-- Rendered dynamically in salesSystem.js -->
+                </div>
+                <div class="blackboard-actions">
+                  <button class="btn-trigger" id="btn-simulate-blackboard"><span>Swarm'u Tetikle</span></button>
+                  <div class="blackboard-select-wrapper">
+                    <span>Randevu:</span>
+                    <select id="blackboard-time-select">
+                      <option value="14:00">14:00 (Politikaya Uygun)</option>
+                      <option value="06:00">06:00 (Politika İhlali)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-grid">
+            <!-- B2B Social Post Generator -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <span class="card-icon">✍️</span>
+                  <h3>Çok Dilli B2B İçerik İstasyonu</h3>
+                </div>
+                <div class="card-subtitle">Ürün tanıtımları için anlık post hazırlayıcı</div>
+              </div>
+              <div class="social-generator-container">
+                <div class="filter-controls">
+                  <select id="social-lang-select"></select>
+                  <select id="social-channel-select">
+                    <option value="linkedin">LinkedIn Paylaşımı</option>
+                    <option value="facebook">Facebook Toplulukları</option>
+                  </select>
+                  <select id="social-pillar-select"></select>
+                </div>
+                <div class="post-preview-card">
+                  <div class="post-preview-header">
+                    <div class="avatar-ph">H</div>
+                    <div>
+                      <div class="brand-name">HMPLAS Digital Sales Swarm</div>
+                      <div class="sponsor-tag">Sponsorlu B2B Tanıtım</div>
+                    </div>
+                  </div>
+                  <textarea id="social-post-textarea" readonly></textarea>
+                  <div class="post-preview-footer">
+                    <span id="social-char-count">Karakter: 0</span>
+                    <button class="btn-copy" id="btn-copy-social-post"><span id="btn-copy-social-text">Panoya Kopyala</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Campaign ROI Calculator -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <span class="card-icon">📈</span>
+                  <h3>B2B Reklam ROI Simülatörü</h3>
+                </div>
+                <div class="card-subtitle">Pazarlama bütçesi yatırım dönüşü hesaplayıcı</div>
+              </div>
+              <div class="roi-container">
+                <div class="slider-control-group">
+                  <div class="slider-label">
+                    <span>Aylık Reklam Bütçesi</span>
+                    <span class="value" id="social-budget-value">1.500 €</span>
+                  </div>
+                  <input type="range" min="500" max="30000" value="1500" class="styled-slider" id="social-budget-slider" />
+                </div>
+                <div class="roi-metrics-grid" id="roi-metrics-container">
+                  <!-- Rendered dynamically in salesSystem.js -->
+                </div>
+                <div class="custom-alert success">
+                  <div class="custom-alert-text">
+                    <h4>Pazarlama Yatırım Dönüşü Analizi</h4>
+                    <p id="social-roi-verdict"><span id="social-calc-roi-percentage">Hesaplanıyor...</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================== TAB 3: HERMES AGENT OS CONTROL CENTER ==================== -->
+        <section class="tab-pane" id="tab-agentos">
+          <header class="page-header">
+            <h1>Hermes Agent OS - Yönetim Merkezi</h1>
+            <p>İkinci Beyin (Obsidian MCP), Otonom Swarm Video Geliştirme ve Yapay Zeka Entegrasyonları</p>
+          </header>
+
+          <div class="dashboard-grid">
+            <!-- Models and Providers -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <span class="card-icon">⚙️</span>
+                  <h3>Model Sağlayıcı & API Yönetimi</h3>
+                </div>
+              </div>
+              <div class="agent-settings-group">
+                <div class="form-group">
+                  <label>Aktif Model Sağlayıcı</label>
+                  <select id="agent-provider-select">
+                    <option value="newsportal">Newsportal (Nvidia OAuth)</option>
+                    <option value="openrouter">OpenRouter APIs (Free)</option>
+                    <option value="coding-plans">Coding Plans (Uncapped)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Kullanılabilir Modeller</label>
+                  <select id="agent-model-select"></select>
+                </div>
+                <div class="status-badge-container">
+                  <div class="status-dot" id="oauth-status-dot"></div>
+                  <div class="status-info">
+                    <h4 id="oauth-status-title">Newsportal OAuth Doğrulandı</h4>
+                    <p id="oauth-status-desc">Step/Neatron ücretsiz modellerine erişim aktif.</p>
+                  </div>
+                  <button class="btn-action" id="btn-oauth-toggle">Oturumu Kapat</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Obsidian Second Brain / Memory Vault -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <span class="card-icon">🧠</span>
+                  <h3>Obsidian MCP İkinci Beyin</h3>
+                </div>
+                <div class="card-subtitle">Ajanlar arası ortak uzun süreli hafıza kasası</div>
+              </div>
+              <div class="vault-container">
+                <div class="vault-header">
+                  <span>Obsidian Vault Bağlantısı</span>
+                  <button class="btn-toggle" id="btn-mcp-vault-toggle"><span id="mcp-vault-status-text">Bağlantıyı Kes</span></button>
+                </div>
+                <div class="vault-files-panel">
+                  <div class="panel-header">Hafıza Kasa Dosyaları (Obsidian .md)</div>
+                  <div class="files-list" id="obsidian-files-list">
+                    <!-- Rendered dynamically in hermesOS.js -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-grid">
+            <!-- Hyperframes Video Production Swarm -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <span class="card-icon">🎬</span>
+                  <h3>Hyperframes Otonom Video Üretim Hattı</h3>
+                </div>
+                <div class="card-subtitle">Video Writer, Editor & Judge İş Birliği Swarmı</div>
+              </div>
+              <div class="video-swarm-container">
+                <div class="swarm-stages" id="video-kanban-stages">
+                  <!-- Rendered dynamically in hermesOS.js -->
+                </div>
+                <div class="swarm-controls">
+                  <button class="btn-trigger" id="btn-start-video-swarm">
+                    <span id="video-swarm-btn-text">Video Swarm Başlat</span>
+                  </button>
+                  <button class="btn-toggle" id="btn-heygen-toggle">
+                    <span id="heygen-toggle-text">HeyGen Avatar: Kapalı</span>
+                  </button>
+                </div>
+                <div class="custom-alert" id="video-swarm-verdict">
+                  <div class="custom-alert-text">
+                    <h4 id="video-swarm-title">Video Swarm Hazır</h4>
+                    <p id="video-swarm-desc">Ücretsiz Hyperframes yeteneği aktif. Tek tıkla otonom video üretimini başlatın.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Jarvis Voice Assistant -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <span class="card-icon">🎙️</span>
+                  <h3>Jarvis Sesli Komuta Konsolu</h3>
+                </div>
+              </div>
+              <div class="jarvis-container">
+                <div class="voice-wave-wrapper">
+                  <div id="jarvis-voice-wave" class="voice-wave">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                  <button class="btn-action" id="btn-jarvis-listen"><span id="jarvis-listen-text">Jarvis Dinle</span></button>
+                </div>
+                <div class="form-group" style="margin-top: 1rem;">
+                  <label>Hazır Sesli Komutlar</label>
+                  <select id="jarvis-command-select"></select>
+                </div>
+                <div class="console-box" id="jarvis-terminal">
+                  <div class="log-entry info">[Jarvis] Beklemede. Bir komut seçip "Jarvis Dinle" tuşuna basın.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Optimization & Token Savings -->
+          <div class="card" style="margin-top: 1.5rem;">
+            <div class="card-header">
+              <div class="card-title">
+                <span class="card-icon">⚡</span>
+                <h3>Pazarlama Optimizasyonu (Headroom & Mark It Down)</h3>
+              </div>
+            </div>
+            <div class="optimizer-grid">
+              <div class="optimizer-controls">
+                <div class="optimizer-row">
+                  <div>
+                    <h4>Headroom Token Tasarruf Modu</h4>
+                    <p>Bağlam pencerelerinde token tüketimini otomatik optimize eder.</p>
+                  </div>
+                  <button class="btn-toggle" id="btn-headroom-toggle"><span id="headroom-toggle-text">Headroom: Kapalı</span></button>
+                </div>
+                <div class="optimizer-row border-top">
+                  <div>
+                    <h4>Mark It Down Dosya Dönüştürücü</h4>
+                    <p>Docx/PDF kataloglarını LLM uyumlu Markdown (.md) formatına çevirir.</p>
+                  </div>
+                  <div class="markitdown-controls">
+                    <input type="text" id="markitdown-filename" placeholder="HMPLAS_B2B_Urun_Katalogu.docx" />
+                    <button class="btn-action" id="btn-markitdown-convert">Dönüştür (.md)</button>
+                  </div>
+                </div>
+              </div>
+              <div class="savings-display-card">
+                <span class="savings-label">Kazanılan Toplam Token</span>
+                <div class="savings-counter" id="token-saved-counter">0</div>
+                <div class="savings-pct" id="token-saved-pct">Maliyet Azalımı: %0</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- ntfy logger floating panel or bottom section for notifications -->
+        <div class="card" style="margin-top: 1.5rem;">
+          <div class="card-header" style="flex-direction: row; justify-content: space-between; align-items: center;">
+            <div class="card-title">
+              <span class="card-icon">🚨</span>
+              <h3>ntfy.sh/hmplasos-alerts (Anlık Sistem Logu)</h3>
+            </div>
+            <button class="btn-clear" id="btn-clear-terminal">Temizle</button>
+          </div>
+          <div class="alert-terminal" id="ntfy-logger" style="height: 120px;">
+            <div class="alert-log-entry info">[Sistem] Otonom satış asistanları ve pazarlama altyapısı başarıyla başlatıldı.</div>
+          </div>
         </div>
-        <div class="ai-chat-messages" id="ai-messages"></div>
-        <div class="ai-chat-footer">
-            <input type="text" class="ai-chat-input" id="ai-input" placeholder="Type your message..." autocomplete="off">
-            <button class="ai-chat-send" id="ai-send-btn" title="Gönder"><i class="fas fa-paper-plane"></i></button>
-        </div>
+
+      </main>
     </div>
-
-    <script>
-        (function () {
-            let booking = null; // { step: "name"|"contact"|"date"|"topic", data: {} }
-
-            const fab      = document.getElementById("ai-fab");
-            const panel    = document.getElementById("ai-chat-panel");
-            const closeBtn = document.getElementById("ai-close-btn");
-            const input    = document.getElementById("ai-input");
-            const sendBtn  = document.getElementById("ai-send-btn");
-            const msgBox   = document.getElementById("ai-messages");
-
-            // ── Knowledge base (English only) ─────────────────────────────
-            const kw = {
-                greeting:    ["hello", "hi", "hey", "good morning", "good afternoon", "good evening", "how are you"],
-                products:    ["product", "service", "production", "plastic", "injection", "vacuum", "blow", "part"],
-                medical:     ["medical", "health", "hospital", "healthcare", "medicine"],
-                automotive:  ["automotive", "vehicle", "car", "automobile"],
-                education:   ["education", "school", "academic"],
-                sports:      ["sport", "fitness", "athletic"],
-                contact:     ["contact", "address", "phone", "mail", "email", "location", "where", "reach"],
-                about:       ["about", "who are you", "what do you", "experience", "years", "company", "firm"],
-                price:       ["price", "cost", "quote", "how much", "pricing"],
-                appointment: ["appointment", "meeting", "visit", "schedule", "book"]
-            };
-            const r = {
-                welcome:      "Hello! 👋 I'm Ayşe, HMPLAST's digital assistant.\n\nI can help you with:\n• 📦 Our products and services\n• 🏭 Sectors we serve\n• 📍 Contact information\n• 📅 Book an appointment",
-                greeting:     "Hello! Welcome to HMPLAST. You can ask about our products, sectors, or book an appointment.",
-                products:     "🏭 HMPLAST Production Capabilities:\n\n🔹 Plastic Injection – High-precision part manufacturing\n🔹 Vacuum Blow Molding – Large-volume plastic forms\n🔹 Medical Spare Parts – ISO-compliant medical components\n🔹 Automotive Parts – Durable vehicle components\n\nYou can book an appointment to get a quote.",
-                medical:      "💊 HMPLAST manufactures ISO-compliant plastic spare parts and medical components for the healthcare sector. With 10+ years of experience, we provide reliable solutions.",
-                automotive:   "🚗 We produce high-durability, precision-tolerance plastic automotive parts. With 500+ successful projects, we are the preferred manufacturer in the sector.",
-                education:    "🎓 We produce durable plastic products and equipment for the education sector. Contact us for more details.",
-                sports:       "🏋️ We produce custom plastic equipment and parts for the sports sector. Custom design and mass production options are available.",
-                contact:      "📍 Address: Mimarsinan Mah. Çorum Industrial Site 21st St. No:61 Merkez/Çorum, Turkey\n📞 Phone: +90 542 408 10 90\n📧 Email: info@hmplast.com.tr\n\n⏰ Working Hours: Weekdays 08:00 – 18:00",
-                about:        "🏢 HMPLAST is a company specializing in plastic injection, vacuum blow molding, and medical spare parts with over 10 years of experience. We operate 24/7 in Çorum with 500+ successful projects and a 100% customer satisfaction goal.",
-                price:        "💰 Our pricing varies by product type, quantity, and specifications. You can book an appointment or email info@hmplast.com.tr for a custom quote.",
-                unknown:      "I'm sorry, I didn't quite understand. 😊 I can help with:\n\n• 📦 Products and services\n• 🏭 Sectors (medical, automotive, education, sports)\n• 📍 Contact and address\n• 📅 Booking an appointment\n• 💰 Price quote",
-                appt_start:   "📅 Let's get your appointment request started.\n\nPlease enter your full name:",
-                appt_contact: "Thank you! 😊\n\nPlease enter your email address or phone number:",
-                appt_date:    "Great!\n\nWhat date and time would you prefer?\n(e.g. March 25, 2026, afternoon)",
-                appt_topic:   "Got it. Finally, briefly describe the topic of the meeting:",
-                appt_done:    (d) => ({
-                    msg:  `✅ Your appointment request is ready!\n\n👤 ${d.name}\n📞 ${d.contact}\n📅 ${d.date}\n📌 ${d.topic}\n\nOpening your mail app...`,
-                    href: `mailto:info@hmplast.com.tr?subject=${enc("Appointment Request – " + d.name)}&body=${enc("Full Name: " + d.name + "\nContact: " + d.contact + "\nPreferred Date: " + d.date + "\nTopic: " + d.topic)}`
-                })
-            };
-
-            function enc(s) { return encodeURIComponent(s); }
-
-            // ── Mesaj ekle ────────────────────────────────────────────────
-            function addMsg(role, text, linkHref, linkLabel) {
-                const div = document.createElement("div");
-                div.className = "ai-msg " + role;
-                if (role === "user") {
-                    div.textContent = text;
-                } else {
-                    div.innerHTML = text.replace(/\n/g, "<br>");
-                    if (linkHref) {
-                        const a = document.createElement("a");
-                        a.href = linkHref;
-                        a.className = "ai-appt-btn";
-                        a.textContent = linkLabel;
-                        a.target = "_blank";
-                        div.appendChild(document.createElement("br"));
-                        div.appendChild(a);
-                    }
-                }
-                msgBox.appendChild(div);
-                msgBox.scrollTop = msgBox.scrollHeight;
-            }
-
-            function showTyping() {
-                const div = document.createElement("div");
-                div.className = "ai-msg assistant";
-                div.innerHTML = '<span class="ai-typing"><span></span><span></span><span></span></span>';
-                msgBox.appendChild(div);
-                msgBox.scrollTop = msgBox.scrollHeight;
-                return div;
-            }
-
-            // ── Yanıt üret ────────────────────────────────────────────────
-            function respond(userText) {
-                sendBtn.disabled = true;
-                const typing = showTyping();
-
-                setTimeout(() => {
-                    typing.remove();
-                    sendBtn.disabled = false;
-
-                    const low = userText.toLowerCase();
-
-                    // Randevu akışı
-                    if (booking) {
-                        switch (booking.step) {
-                            case "name":
-                                booking.data.name = userText;
-                                booking.step = "contact";
-                                addMsg("assistant", r.appt_contact);
-                                return;
-                            case "contact":
-                                booking.data.contact = userText;
-                                booking.step = "date";
-                                addMsg("assistant", r.appt_date);
-                                return;
-                            case "date":
-                                booking.data.date = userText;
-                                booking.step = "topic";
-                                addMsg("assistant", r.appt_topic);
-                                return;
-                            case "topic":
-                                booking.data.topic = userText;
-                                const res = r.appt_done(booking.data);
-                                booking = null;
-                                addMsg("assistant", res.msg);
-                                setTimeout(() => { window.location.href = res.href; }, 800);
-                                return;
-                        }
-                    }
-
-                    // Intent tespiti
-                    const has = (list) => list.some(k => low.includes(k));
-
-                    if (has(kw.appointment)) {
-                        booking = { step: "name", data: {} };
-                        addMsg("assistant", r.appt_start);
-                    } else if (has(kw.greeting)) {
-                        addMsg("assistant", r.greeting);
-                    } else if (has(kw.medical)) {
-                        addMsg("assistant", r.medical);
-                    } else if (has(kw.automotive)) {
-                        addMsg("assistant", r.automotive);
-                    } else if (has(kw.education)) {
-                        addMsg("assistant", r.education);
-                    } else if (has(kw.sports)) {
-                        addMsg("assistant", r.sports);
-                    } else if (has(kw.products)) {
-                        addMsg("assistant", r.products);
-                    } else if (has(kw.contact)) {
-                        addMsg("assistant", r.contact);
-                    } else if (has(kw.about)) {
-                        addMsg("assistant", r.about);
-                    } else if (has(kw.price)) {
-                        addMsg("assistant", r.price);
-                    } else {
-                        addMsg("assistant", r.unknown);
-                    }
-                }, 500 + Math.random() * 400);
-            }
-
-            // ── Panel aç/kapa ─────────────────────────────────────────────
-            fab.addEventListener("click", () => {
-                panel.classList.add("open");
-                fab.classList.add("hidden");
-                if (msgBox.children.length === 0) {
-                    addMsg("assistant", r.welcome);
-                }
-                input.focus();
-            });
-
-            closeBtn.addEventListener("click", () => {
-                panel.classList.remove("open");
-                fab.classList.remove("hidden");
-            });
-
-            // ── Mesaj gönder ──────────────────────────────────────────────
-            function sendText() {
-                const text = input.value.trim();
-                if (!text) return;
-                addMsg("user", text);
-                input.value = "";
-                respond(text);
-            }
-
-            sendBtn.addEventListener("click", sendText);
-            input.addEventListener("keydown", (e) => {
-                if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); sendText(); }
-            });
-
-            input.placeholder = "Type your message...";
-        })();
-    </script>
-    <!-- /HM Plast Yazılı Asistan -->
-</body>
-
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
