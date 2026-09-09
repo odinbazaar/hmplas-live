@@ -28,7 +28,7 @@ jobs:
         run: |
           rm -rf node_modules
           npm install
-          npx vite build --base=/hmplas-live/
+          npx vite build --base=/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
