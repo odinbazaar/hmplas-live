@@ -24,9 +24,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Build
+      - name: Install and Build
         run: |
-          chmod -R +x node_modules/.bin || true
+          rm -rf node_modules
+          npm install
           npx vite build --base=/hmplas-live/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
